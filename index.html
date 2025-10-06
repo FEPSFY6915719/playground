@@ -1,21 +1,21 @@
-<DOCTYPE html>
+<!DOCTYPE html>
   <html>
     <head>
-      <title>Change Button Colour</title>
+      <title>Change Button Color</title>
     </head>
     <body>
-      <button id="colorButton">Click me to change colour</button>
+      <button id="colorButton">Click me to change color</button>
 
       <script>
         //Get a reference to the button element
-        var button = document.getElementByld("colorButton");
+        var button = document.getElementById("colorButton");
 
         //Function to change the button colour
         function changeColor() {
           //Generate a random color (hexadecimal)
           var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
 
-          //Set the button' background color to the random color
+          //Set the button's background color to the random color
           button.style.backgroundColor = randomColor;
         }
 
